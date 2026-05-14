@@ -29,7 +29,7 @@ export default function LoginForm() {
         alert("login sucessfull");
         router.push("/dashboard");
       } else {
-        alert("login failed:");
+        alert("invalid credential");
       }
     } catch (error) {
       console.error("Error during login:", error);

@@ -14,8 +14,7 @@ export default function HomePage() {
     <div className=""></div>
   
     <div className="relative z-10"> 
-      <Navbar /> 
-  
+      <Navbar />
       <Hero />
       <Features />
 
