@@ -39,43 +39,51 @@ export default function RegisterForm() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center  bg-yellow-900 border-oval-2 rounded-2xl overscroll-x-auto ">
-      <h1 className="text-2xl font-bold mb-6">Register</h1>
+    <div className="flex flex-col items-center justify-center py-45">
       <form
         onSubmit={handleSubmit}
-        className="bg-white text-black p-6 rounded shadow-md w-full max-w-sm"
+        className="bg-white text-black shadow-md w-full max-w-sm rounded-2xl py-8"
       >
-        <label>Name</label>
-        <input
-          type="text"
-          name="name"
-          value={name}
-          onChange={handleChange}
-          placeholder="enter your name"
-          className="w-full p-2 mb-4 border rounded"
-        />
-        <label>Email</label>
-        <input
-          type="email"
-          name="email"
-          value={email}
-          onChange={handleChange}
-          placeholder="name@example.com"
-          className="w-full p-2 mb-4 border rounded"
-        />
-        <label>Password</label>
-        <input
-          type="password"
-          name="password"
-          value={password}
-          onChange={handleChange}
-          placeholder="********"
-          className="w-full p-2 mb-4 border rounded"
-        />
-        <div className="flex items-center justify-between mb-4 gap-4">
+        <h1 className="text-2xl text-center font-bold mb-6">Register</h1>
+        <div className="px-10">
+          <label>Name</label>
+          <input
+            type="text"
+            name="name"
+            value={name}
+            onChange={handleChange}
+            placeholder="enter your name"
+            className="w-full p-2 mb-4 border rounded"
+          />
+        </div>
+
+        <div className="px-10">
+          <label>Email</label>
+          <input
+            type="email"
+            name="email"
+            value={email}
+            onChange={handleChange}
+            placeholder="name@example.com"
+            className="w-full p-2 mb-4 border rounded"
+          />
+        </div>
+        <div className="px-10 ">
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            value={password}
+            onChange={handleChange}
+            placeholder="********"
+            className="w-full p-2 mb-4 border rounded"
+          />
+        </div>
+
+        <div className="px-10 flex items-center justify-between mb-4 gap-4 ">
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-950 cursor-pointer"
+            className="w-4/5 bg-blue-500 text-white p-2 rounded hover:bg-blue-950 cursor-pointer"
           >
             Register
           </button>

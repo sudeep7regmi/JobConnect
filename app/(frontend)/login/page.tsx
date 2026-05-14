@@ -1,12 +1,19 @@
 import LoginForm from "@/component/LoginForm";
+import Image from "next/image";
 
 export default function Loginpage()  {
-    return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-            
-            <p className="text-xl items-center text-red-800"></p>
+    return (<div
+        className="min-h-screen bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage:
+            "url('https://cdn.wallpapersafari.com/81/64/6o3WkH.jpg')",
+            backgroundRepeat: "no-repeat"
+        }}
+      >
+        
             <LoginForm />
         
+   
         </div>
     );
 }   

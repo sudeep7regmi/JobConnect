@@ -29,7 +29,7 @@ export default function LoginForm() {
         alert("login sucessfull");
         router.push("/dashboard");
       } else {
-        console.error("login failed:", data);
+        alert("login failed:");
       }
     } catch (error) {
       console.error("Error during login:", error);
@@ -37,12 +37,18 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-2xl font-bold mb-6">login</h1>
+    <div
+      className="flex flex-col items-center justify-center py-66
+ "
+    >
       <form
         onSubmit={handleSubmit}
-        className="bg-white text-black p-6 rounded shadow-md w-full max-w-sm"
+        className="bg-blue-200 rounded-3xl text-shadow-black p-6 shadow-md w-full max-w-sm"
       >
+        {" "}
+        <div className="bg-cover text-center  ">
+          <h1 className="text-4xl ">Login</h1>
+        </div>
         <label>Email</label>
         <input
           type="email"
@@ -68,8 +74,11 @@ export default function LoginForm() {
           >
             Login
           </button>{" "}
-          <Link href="/register" className="text-sm text-blue-500 hover:underline">
-          <p className="underline hover:text-blue-500 text-base">Register</p>
+          <Link
+            href="/register"
+            className="text-sm text-blue-500 hover:underline"
+          >
+            <p className="underline hover:text-blue-500 text-base">Register</p>
           </Link>
         </div>
       </form>
