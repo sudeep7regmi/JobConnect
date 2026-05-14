@@ -4,7 +4,7 @@ import Image from "next/image";
 }
 export default function Hero() {
   return (
-    <section className="pt-16">
+    <section className="py-16 min-h-[80vh]">
       <div className="max-w-7xl mx-auto px-10 grid grid-cols-2 gap-10 items-center">
         {/* LEFT SIDE */}
         <div>
