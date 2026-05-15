@@ -33,7 +33,12 @@ export default function Features() {
     ];
   
     return (
-      <section id="features" className="py-24 bg-gray-50">
+      <section id="features" className="py-24 bg-gray-50 relative bg-cover bg-center"
+     style={{
+        backgroundImage:
+          "url('https://static.vecteezy.com/system/resources/thumbnails/021/032/350/small/light-colorful-effect-freeform-gradient-background-free-photo.jpg')",
+          backgroundRepeat: "no-repeat",
+      }}>
         <div className="max-w-7xl mx-auto px-6">
           
           {/* Heading */}
@@ -47,11 +52,11 @@ export default function Features() {
           </div>
   
           {/* Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-1"
+                className="bg-gray-200 backdrop-blur-2xl p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2"
               >
                 <div className="text-4xl mb-4">
                   {feature.icon}

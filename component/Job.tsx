@@ -1,4 +1,5 @@
-export default function JobsPage() {
+import Link from "next/link";
+export default function FeaturedJobs() {
     const jobs = [
       {
         title: "Frontend Developer",
@@ -21,20 +22,25 @@ export default function JobsPage() {
     ];
   
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div id= "featuredJobs" className="min-h-screen  bg-cover bg-center "
+      style={{
+        backgroundImage:
+          "url('https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2025/03/steve-jobs-inc.jpg')",
+    
+      }}>
         
         {/* HEADER */}
-        <div className="bg-white shadow-sm p-6">
-          <h1 className="text-3xl font-bold text-blue-600">
+        <div className="shadow-sm p-6 text-center ">
+          <h1 className="text-3xl font-bold text-blue-600 ">
             Available Jobs
           </h1>
-          <p className="text-gray-600 mt-1">
+          <p className="text-shadow-black mt-1">
             Find and apply to your dream job
           </p>
         </div>
   
         {/* JOB GRID */}
-        <div className="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="max-w-7xl mx-auto p-22 grid grid-cols-1 md:grid-cols-3 gap-6">
   
           {jobs.map((job, index) => (
             <div
@@ -55,9 +61,9 @@ export default function JobsPage() {
                 <span>{job.type}</span>
               </div>
   
-              <button className="mt-6 w-full bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 transition">
+             <Link href ="./login"><button className="mt-6 w-full bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 transition cursor-pointer">
                 Apply Now
-              </button>
+              </button></Link>
   
             </div>
           ))}
