@@ -1,4 +1,3 @@
-import { url } from "inspector";
 import Link from "next/link";
 export default function OurPartners() {
   const Partners = [
@@ -7,7 +6,7 @@ export default function OurPartners() {
       location: "Kathmandu",
       type: "Networking Company",
       desc: "Networking Related jobs on full time conract and training",
-      url: "",
+      url: "https://www.annapurna.net.np/",
     },
     {
       company: "Growssence",
@@ -21,13 +20,13 @@ export default function OurPartners() {
       location: "Syangja",
       type: "Futsal Software Management",
       desc: "Futsal software management and Ride sharing along with job oppourtunites for software and computer related aspirants. ",
-      url: "",
+      url: "https://www.sudeepregmi7.com.np/",
     },
   ];
   return (
     <section
       id="ourPartners"
-      className="relative py-24 bg-cover bg-center"
+      className="min-h-screen relative py-24 bg-cover bg-center"
       style={{
         backgroundImage:
           "url('https://thumbs.dreamstime.com/b/business-partners-teamwork-friendship-concept-multiethnic-diverse-group-colleagues-join-hands-together-creative-team-98099747.jpg')",

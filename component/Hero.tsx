@@ -1,7 +1,6 @@
-
-{
+import Link from "next/link"
   /* HERO SECTION */
-}
+
 export default function Hero() {
   return (
     <section className="py-16 min-h-[80vh] relative">
@@ -17,11 +16,11 @@ export default function Hero() {
             professional future with ease.
           </p>
 
-          <div className="flex gap-4 mt-8">
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-xl">
+          <div className="flex gap-4 mt-8 cursor-pointer">
+           <Link href="./login"> <button className="bg-blue-600 text-white px-6 py-3 rounded-xl">
               Get Started
             </button>
-
+            </Link>
             <button className="border px-6 py-3 rounded-xl">
               Explore Jobs
             </button>

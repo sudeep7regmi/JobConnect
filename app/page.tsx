@@ -3,6 +3,8 @@ import Navbar from "@/component/Navbar";
 import Features from "@/component/Features";
 import FeaturedJobs from "@/component/Job";
 import OurPartners from "@/component/OurPartners";
+import AboutUs from "@/component/AboutUs"
+import Footer from "@/component/Footer";
 export default function HomePage() {
   return (
     <div
@@ -22,6 +24,9 @@ export default function HomePage() {
         <Features />
         <FeaturedJobs />
         <OurPartners />
+        <AboutUs />
+        <Footer />
+
       </div>
     </div>
   );

@@ -16,8 +16,8 @@ export default function Navbar() {
       <div className="hidden md:flex justify-around items-center  bg-blue-300 rounded-full  text-lg px-10 py-3 gap-10">
        <Link href="#features"> <p className="">Features</p></Link>
        <Link href="#featuredJobs"><p className="">Job</p></Link> 
-        <p className="">Our Partners</p>
-        <p className="">About us</p>
+       <Link href="#ourPartners"> <p className="">Our Partners</p></Link>
+       <Link href="#about"><p className="">About us</p></Link>
       </div>
 
       <div className="flex items-center text-lg ">
