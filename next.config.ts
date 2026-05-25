@@ -2,8 +2,24 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["play-lh.googleusercontent.com","img.freepik.com"],
-  
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "play-lh.googleusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "img.freepik.com",
+      },
+      {
+        protocol: "https",
+        hostname: "as1.ftcdn.net",
+      },
+      {
+        protocol: "https",
+        hostname: "static.vecteezy.com",
+      },
+    ],
   },
 };
 
