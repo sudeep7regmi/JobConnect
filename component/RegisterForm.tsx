@@ -16,6 +16,7 @@ export default function RegisterForm() {
     else if (name === "password") setPassword(value);
   };
 
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
@@ -42,7 +43,7 @@ export default function RegisterForm() {
     <div className="flex flex-col items-center justify-center py-45">
       <form
         onSubmit={handleSubmit}
-        className="bg-white text-black shadow-md w-full max-w-sm rounded-2xl py-8"
+        className="backdrop-blur-md text-black shadow-md w-full max-w-sm rounded-2xl py-8"
       >
         <h1 className="text-2xl text-center font-bold mb-6">Register</h1>
         <div className="px-10">
@@ -83,9 +84,9 @@ export default function RegisterForm() {
         <div className="px-10 flex items-center justify-between mb-4 gap-4 ">
           <button
             type="submit"
-            className="w-4/5 bg-blue-500 text-white p-2 rounded hover:bg-blue-950 cursor-pointer"
+            className="w-4/5 bg-black rounded-3xl text-white p-2  hover:bg-blue-950 cursor-pointer"
           >
-            Register
+            Get Started
           </button>
           <Link href="/login" className="text-sm text-blue-500 hover:underline">
             <p className="underline hover:text-blue-500 text-base">Login</p>

@@ -6,7 +6,7 @@ export default function Loginpage()  {
         className="min-h-screen bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://cdn.wallpapersafari.com/81/64/6o3WkH.jpg')",
+            "url('https://upload.wikimedia.org/wikipedia/commons/c/cc/Cloudy_Sky_Background.jpg')",
             backgroundRepeat: "no-repeat"
         }}
       >

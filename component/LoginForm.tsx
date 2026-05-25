@@ -43,11 +43,12 @@ export default function LoginForm() {
     >
       <form
         onSubmit={handleSubmit}
-        className="bg-blue-200 rounded-3xl text-shadow-black p-6 shadow-md w-full max-w-sm"
+        className="backdrop-blur-xl rounded-3xl text-shadow-black p-6 shadow-md w-full max-w-sm"
       >
         {" "}
         <div className="bg-cover text-center  ">
-          <h1 className="text-4xl ">Login</h1>
+          <h1 className="text-3xl p-4">Login</h1>
+          <p className="text-shadow-olive-400 pb-3 mb-4"><u className="text-black cursor-pointer">Sign in</u> using a registered email and password </p>
         </div>
         <label>Email</label>
         <input
@@ -70,7 +71,7 @@ export default function LoginForm() {
         <div className="flex items-center justify-between mb-4 gap-4">
           <button
             type="submit"
-            className="w-full bg-cyan-600 text-white p-2 rounded hover:bg-blue-950 cursor-pointer"
+            className="w-full text-lg bg-green-800 text-white rounded-4xl p-3 hover:bg-blue-950 cursor-pointer"
           >
             Login
           </button>{" "}
