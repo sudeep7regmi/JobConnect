@@ -4,10 +4,10 @@ export default function AboutUs() {
     <section
       id="about"
       className="relative py-24 bg-cover bg-center min-h-screen"
-      style={{
-        backgroundImage:
-          "url('https://static.vecteezy.com/system/resources/thumbnails/040/890/255/small/ai-generated-empty-wooden-table-on-the-natural-background-for-product-display-free-photo.jpg')",
-      }}
+      // style={{
+      //   backgroundImage:
+      //     "url('https://static.vecteezy.com/system/resources/thumbnails/040/890/255/small/ai-generated-empty-wooden-table-on-the-natural-background-for-product-display-free-photo.jpg')",
+      // }}
     >
       {/* OVERLAY */}
       <div className="absolute inset-0 bg-black/70"></div>
