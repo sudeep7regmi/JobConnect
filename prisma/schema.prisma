@@ -7,40 +7,44 @@ datasource db {
   provider = "mysql"
 }
 
-enum Role{
+enum Role {
+  ADMIN
   RECRUITER
   CANDIDATE
 }
+
 model User {
   id           Int           @id @default(autoincrement())
   email        String        @unique
   name         String?
   password     String
-  role         Role
+
+  role         Role @default(CANDIDATE)
+
   applications Application[]
   jobs         Job[]
 }
-    
+
 model Job {
   id           Int           @id @default(autoincrement())
   title        String
   company      String
   location     String
   type         String
-  recruiterId  Int
-  applications Application[]
-  recruiter    User          @relation(fields: [recruiterId], references: [id])
 
-  @@index([recruiterId], map: "Job_recruiterId_fkey")
+  recruiterId  Int
+
+  recruiter    User @relation(fields: [recruiterId], references: [id])
+
+  applications Application[]
 }
 
 model Application {
-  id     Int  @id @default(autoincrement())
-  userId Int
-  jobId  Int
-  job    Job  @relation(fields: [jobId], references: [id])
-  user   User @relation(fields: [userId], references: [id])
+  id      Int @id @default(autoincrement())
 
-  @@index([jobId], map: "Application_jobId_fkey")
-  @@index([userId], map: "Application_userId_fkey")
+  userId  Int
+  jobId   Int
+
+  user User @relation(fields: [userId], references: [id])
+  job  Job  @relation(fields: [jobId], references: [id])
 }

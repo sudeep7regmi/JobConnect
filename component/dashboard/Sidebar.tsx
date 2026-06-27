@@ -1,5 +1,6 @@
 "use client";
 
+import { BriefcaseBusiness, LayoutDashboard, MessageCircle, Settings, StickyNote } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -10,27 +11,27 @@ export default function Sidebar() {
     {
       name: "Dashboard",
       href: "/dashboard",
-      icon: "🏠",
+      icon: <LayoutDashboard/>,
     },
     {
       name: "Jobs",
       href: "/jobs",
-      icon: "💼",
+      icon: <BriefcaseBusiness/>,
     },
     {
       name: "Applications",
       href: "/applications",
-      icon: "📄",
+      icon: <StickyNote/>,
     },
     {
       name: "Messages",
       href: "/messages",
-      icon: "💬",
+      icon: <MessageCircle/>,
     },
     {
       name: "Settings",
       href: "/settings",
-      icon: "⚙️",
+      icon: <Settings/>,
     },
   ];
   const handleLogout = async () => {
