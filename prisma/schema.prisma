@@ -7,15 +7,20 @@ datasource db {
   provider = "mysql"
 }
 
+enum Role{
+  RECRUITER
+  CANDIDATE
+}
 model User {
   id           Int           @id @default(autoincrement())
   email        String        @unique
   name         String?
   password     String
+  role         Role
   applications Application[]
   jobs         Job[]
 }
-
+    
 model Job {
   id           Int           @id @default(autoincrement())
   title        String
